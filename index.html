@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 10px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="goals" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bullseye" style="color: #b12525;"></i> Goals</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder-closed" style="color: #f2da82;"></i> Projects</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-circle-check" style="color: #67db1a;"></i> Tasks</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pen-to-square" style="color: #bd8770;"></i> Notes</a>
+		<a id="areas" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-clone"></i> Areas</a>
+		<a id="resources" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-hospital"></i> Resources</a>
+		<a id="collections" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-table-cells-large"></i> Collections</a>
+		<a id="archive" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-box-archive"></i> Archive</a>
+		<a id="databases" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-server"></i> Databases</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'goals')
+				window.open("notion://www.notion.so/natureofclarity/Goals-b942c15c80ec4ceabbfbf682cfe8db3d?pvs=4", '_blank').focus();
+			else if (id == "projects")
+				window.open("notion://www.notion.so/natureofclarity/Projects-ac31ad6afd694a6d926807df52d3ef66?pvs=4", '_blank').focus();
+			else if (id == "tasks")
+				window.open("notion://www.notion.so/natureofclarity/Tasks-76bba3c2a6c0499895894e05297cab33?pvs=4", '_blank').focus();
+			else if (id == "notes")
+				window.open("notion://www.notion.so/natureofclarity/Notes-1dcb5c6f095944c280250b0b99016071?pvs=4", '_blank').focus();
+			else if (id == "areas")
+				window.open("notion://www.notion.so/natureofclarity/Areas-d4e7c7c573dc4672baae7aeeeb89aa59?pvs=4", '_blank').focus();
+			else if (id == "resources")
+				window.open("notion://www.notion.so/natureofclarity/Resources-c8a143884c814696b7af6f618cf5c5c5?pvs=4", '_blank').focus();
+			else if (id == "collections")
+				window.open("notion://www.notion.so/natureofclarity/Collections-02b662c01971481199308baf5cd2e2dc?pvs=4", '_blank').focus();
+			else if (id == "archive")
+				window.open("notion://www.notion.so/natureofclarity/Archive-915449690c5c47a9af6ba5c65ec62a27?pvs=4", '_blank').focus();
+			else if (id == "databases")
+				window.open("notion://www.notion.so/natureofclarity/Databases-f103a4902db245349fc122c1d09d0533?pvs=4", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html
